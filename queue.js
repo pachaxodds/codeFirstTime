@@ -31,7 +31,3 @@ function getQueue(customerPax) {
 }
 
 getQueue(5);
-
-console.log("------------------------");
-
-document.getElementById("display").innerHTML = "Hello Welcome"
