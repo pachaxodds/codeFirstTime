@@ -19,13 +19,19 @@ getQueueType("3", "A");
 getQueueType("4", "A");
 getQueueType("5", "B");
 
-// ข้อ ?
-// function getQueue(customerPax) {
-//     if (customerPax <= 4) {
-//         console.log("ลูกค้า " + customerPax + " ท่าน รับคิว A")
-//     } else {
-//         console.log("ลูกค้า " + customerPax + " ท่าน รับคิว B")
-//     }
-// }
+console.log("------------------------");
 
-// getQueue(5);
+// ข้อ ?
+function getQueue(customerPax) {
+    if (customerPax <= 4) {
+        console.log("ลูกค้า " + customerPax + " ท่าน รับคิว A")
+    } else {
+        console.log("ลูกค้า " + customerPax + " ท่าน รับคิว B")
+    }
+}
+
+getQueue(5);
+
+console.log("------------------------");
+
+document.getElementById("display").innerHTML = "Hello Welcome"

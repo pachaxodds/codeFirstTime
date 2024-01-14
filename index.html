@@ -3,11 +3,19 @@
 <body>
 <h1>Code 1st Time @Geeky Base</h1>
 
-<p>เขียนโค้ดยากจังเลย</p>
+<p>เขียนโค้ดยากจังเลย โอ๊ยๆ</p>
 <p id="display"></p>
 
 <script>
-// We can put Javascript code here.
+function getQueue(customerPax) {
+    if (customerPax <= 4) {
+        document.getElementById("display").innerHTML = ("ลูกค้า " + customerPax + " ท่าน รับคิว A")
+    } else {
+        document.getElementById("display").innerHTML = ("ลูกค้า " + customerPax + " ท่าน รับคิว B")
+    }
+}
+
+getQueue(2);
 </script>
 
 </body>
