@@ -10,12 +10,16 @@
 function getQueue(customerPax) {
     if (customerPax <= 4) {
         document.getElementById("display").innerHTML = ("ลูกค้า " + customerPax + " ท่าน รับคิว A")
-    } else {
+    } else if (customerPax <= 6) {
         document.getElementById("display").innerHTML = ("ลูกค้า " + customerPax + " ท่าน รับคิว B")
+    } else if (customerPax <= 8) {
+        document.getElementById("display").innerHTML = ("ลูกค้า " + customerPax + " ท่าน รับคิว C")
+    } else {
+        document.getElementById("display").innerHTML = ("ลูกค้า " + customerPax + " ท่าน รับคิว D")
     }
 }
 
-getQueue(2);
+getQueue(9);
 </script>
 
 </body>
